@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Pottery School and Shop" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Victoria Oganezova" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="header">
+      <header>
+        <div class="container">
+          <nav class="flex justify">
+            <div class="logo">
+              <span>Logo</span>
+            </div>
+            <ul class="nav-list flex justify">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pottery School</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link" id="openAccount" href="#">My Account</a>
+              </li>
+            </ul>
+            <div class="hamburger-menu hide">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="close hide">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+          </nav>
+
+          <div class="profile-wrapper">
+            <div id="user">
+              <h5>Signed in as:</h5>
+              <ul id="userInfo" class="flex column center"></ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+  </body>
+</html>
