@@ -61,6 +61,15 @@ img{
     margin-bottom: 10px;
 }
 
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
 h1{
     font-size: 60px;
     font-weight: bold;
@@ -98,7 +107,12 @@ header{
 }
 
 .logo{
-    width:10%;
+    width:14%;
+    align-items: center;
+}
+
+.logo img{
+    width:48px;
 }
 
 .nav-list{
@@ -126,7 +140,7 @@ header{
     transition: all 0.5s linear;
     cursor: pointer;
     position: absolute;
-    top:15px;
+    top:25px;
     right:50px;
     display: none;
 }
@@ -157,7 +171,7 @@ header{
         height:auto;
         width:0;
         position: absolute;
-        top:50px;
+        top:55px;
         right:0;
         overflow: hidden;
         visibility: hidden;
@@ -379,12 +393,13 @@ header{
 
 .slider-title{
     padding-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 65px;
+    line-height: 65px;
 }
 
 .slider-desc{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 24px;
 }
 
@@ -509,7 +524,8 @@ section.cards{
 .card{
     max-width:364px;
     background-color: #EDF7FF;
-    padding:35px;
+    padding:20px 35px;
+    width:300px;
     text-align: center;
     cursor: pointer;
    
@@ -521,13 +537,11 @@ section.cards{
 }
 
 .card p{
-    font-size:18px;
+    font-size:24px;
     margin-bottom:28px;
+    max-width:200px;
 }
 
-.card span{
-    font-size:15px;
-}
 
 .icon{
     width:85px;
@@ -582,14 +596,7 @@ section.cards{
 
 
 /*menu*/
-   .underline {
-    width: 5rem;
-    height: 0.25rem;
-    background: red;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-  }
+ 
   .btn-container {
     margin-bottom: 4rem;
     display: flex;
@@ -608,7 +615,7 @@ section.cards{
   }
  
   .section-center {
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
     max-width: 1170px;
     display: grid;
@@ -616,39 +623,33 @@ section.cards{
     justify-items: center;
   }
   .menu-item {
-    display: grid;
-    gap: 1rem 2rem;
-    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease;
   }
+
+  .menu-item:hover{
+    opacity: .8;
+    transform: scale(1.1);
+  }
+
+
+
   .photo {
     object-fit: cover;
-    height: 200px;
+    width: 300px;
+    height:250px;
+    margin-bottom: 10px;
     
-  }
-  .item-info header {
-    display: flex;
-    justify-content: space-between;
     
   }
   .item-info h4 {
     margin-bottom: 0.5rem;
   }
-  
-  .item-text {
-    margin-bottom: 0;
-    padding-top: 1rem;
-  }
 
-  @media (min-width: 1200px) {
-    .section-center {
-      width: 95vw;
-      grid-template-columns: 1fr 1fr;
-    }
-    .photo {
-      height: 150px;
-    }
-  }
-  
   @media (min-width: 768px) {
     .menu-item {
       grid-template-columns: 225px 1fr;
@@ -656,9 +657,28 @@ section.cards{
       max-width: 40rem;
     }
     .photo {
-      height: 175px;
+      height: 275px;
+      width:200px;
+      
     }
   }
+  
+  
+
+  @media (min-width: 1200px) {
+    .section-center {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 300px;
+      width:350px;
+    }
+  }
+  
+
+
+  
 
 /*school*/
 
@@ -694,7 +714,7 @@ section.cards{
     .lessons-text{
         width:45%;
         min-height: 100%;
-        background-image: url('../assets/pot.jpg');
+        background-image: url('../assets/covers/pexels-anastasia-shuraeva-5567009.jpg');
         background-size: cover;
         background-position: center;
         display:grid;
@@ -702,7 +722,8 @@ section.cards{
     }
 
     .lessons-content{
-        background-color: #fff;
+        background-color:rgba(225, 225, 225, 0.7);
+        text-align: center;
         min-width:50%;
         min-height:50%;
         display:grid;
@@ -780,7 +801,13 @@ section.cards{
   
  
   .about-text p{
-    margin-bottom: 15px;
+    margin-bottom: 40px;
+  }
+
+
+  .about-video video{
+    width:45%;
+    max-height:250px;
   }
 
   @media(max-width:1200px){

@@ -81,21 +81,21 @@ let current = 0;
 let data = [
     {   
         index:0,
-        text:'whatever',
-        desc:'blablablablaaaaaa',
-        img: "./assets/pot.jpg"
+        text:'Holiday Surprises',
+        desc:'stay tuned for holiday news...',
+        img: "./assets/covers/1.jpg"
     },
     {
         index:1,
-        text:'what',
-        desc:'blablablablaaaaaa',
-        img: "./assets/pot.jpg"
+        text:'Perflect time',
+        desc:'to reflect and create',
+        img: "./assets/covers/2.jpg"
     },
     {
         index:2,
-        text:'ever',
-        desc:'blablablablaaaaaa',
-        img: "./assets/pot.jpg"
+        text:'Perfect Place',
+        desc:'to learn and evolve',
+        img: "./assets/covers/3.jpg"
     }
 ]
 
@@ -228,76 +228,77 @@ const createSliderContainer = () => {
 const menu = [
     {
       id: 1,
-      title: "buttermilk pancakes",
-      category: "breakfast",
+      category: "holiday",
       price: 15.99,
-      img: "./assets/pot.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      img: "./assets/holidays/1.jpg",
     },
     {
       id: 2,
-      title: "diner double",
-      category: "lunch",
+      category: "holiday",
       price: 13.99,
-      img: "./assets/pot.jpg",
-      desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+      img: "./assets/holidays/2.jpg",
     },
     {
       id: 3,
-      title: "godzilla milkshake",
-      category: "shakes",
+      category: "holiday",
       price: 6.99,
-      img: "./assets/pot.jpg",
-      desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+      img: "./assets/holidays/3.jpg",
     },
     {
       id: 4,
-      title: "country delight",
-      category: "breakfast",
+      category: "holiday",
       price: 20.99,
-      img: "./assets/pot.jpg",
-      desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
+      img: "./assets/holidays/4.jpg",
     },
     {
       id: 5,
-      title: "egg attack",
-      category: "lunch",
-      price: 22.99,
-      img: "./assets/pot.jpg",
-      desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
+      category: "dish",
+      price: 8.99,
+      img: "./assets/dishes/1.jpg",
     },
     {
       id: 6,
-      title: "oreo dream",
-      category: "shakes",
-      price: 18.99,
-      img: "./assets/pot.jpg",
-      desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
+      category: "dish",
+      price: 12.99,
+      img: "./assets/dishes/2.jpg",
     },
     {
       id: 7,
-      title: "bacon overflow",
-      category: "breakfast",
-      price: 8.99,
-      img: "./assets/pot.jpg",
-      desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
-    },
-    {
-      id: 8,
-      title: "american classic",
-      category: "lunch",
-      price: 12.99,
-      img: "./assets/pot.jpg",
-      desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
-    },
-    {
-      id: 9,
-      title: "quarantine buddy",
-      category: "shakes",
+      category: "dish",
       price: 16.99,
-      img: "./assets/pot.jpg",
-      desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+      img: "./assets/dishes/3.jpg",
     },
+    {
+        id: 8,
+        category: "dish",
+        price: 16.99,
+        img: "./assets/dishes/4.jpg",
+      },
+      {
+        id: 9,
+        category: "decor",
+        price: 16.99,
+        img: "./assets/decor/1.jpg",
+      },
+      {
+        id: 10,
+        category: "decor",
+        price: 16.99,
+        img: "./assets/decor/2.jpg",
+      },
+      {
+        id: 11,
+        category: "decor",
+        price: 15.99,
+        img: "./assets/decor/3.jpg",
+      },
+      {
+        id: 12,
+        category: "decor",
+        price: 13.99,
+        img: "./assets/decor/4.jpg",
+      },
+      
   ];
   
 
@@ -313,16 +314,9 @@ function diplayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
 
     return `<article class="menu-item">
-          <img src=${item.img} alt=${item.title} class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>${item.title}</h4>
-              <h4 class="price">$${item.price}</h4>
-            </header>
-            <p class="item-text">
-              ${item.desc}
-            </p>
-          </div>
+          <img src=${item.img} class="photo" />
+          <h4 class="price">${item.price} GEL</h4>
+         
         </article>`;
   });
   displayMenu = displayMenu.join("");
