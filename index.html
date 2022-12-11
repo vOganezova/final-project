@@ -80,11 +80,11 @@
         <div class="cards-container flex">
           <div class="card flex column center">
             <div class="icon flex center">
-              <img
+              <!-- <img
                 class="diamond flex center"
                 src="./images folder/021-diamond.png"
                 alt=""
-              />
+              /> -->
             </div>
             <p>One-click Installation</p>
             <span
@@ -93,7 +93,7 @@
           </div>
           <div class="card flex column center">
             <div class="icon flex center">
-              <img src="./images folder/021-piggy-bank.png" alt="" />
+              <!-- <img src="./images folder/021-piggy-bank.png" alt="" /> -->
             </div>
             <p>Constant Free Updates</p>
             <span
@@ -102,7 +102,7 @@
           </div>
           <div class="card flex column center">
             <div class="icon flex center">
-              <img src="./images folder/037-responsive.png" alt="" />
+              <!-- <img src="./images folder/037-responsive.png" alt="" /> -->
             </div>
             <p>Fully Responsive</p>
             <span>Pharetra vehicula erat. Etiam nec odio vestibulum.</span>
@@ -230,7 +230,7 @@
           </div>
 
           <div class="right">
-            <form action="" method="post">
+            <form id="contactForm">
               <div class="input-outline">
                 <input
                   type="text"
@@ -238,7 +238,6 @@
                   class="form-control"
                   id="name"
                   placeholder="Your Name"
-                  required
                 />
                 <span class="error-text" id="error_name"></span>
               </div>
@@ -250,7 +249,6 @@
                   name="email"
                   id="email"
                   placeholder="Your Email"
-                  required
                 />
                 <span class="error-text" id="error_email"></span>
               </div>
@@ -262,18 +260,19 @@
                   name="subject"
                   id="subject"
                   placeholder="Subject"
-                  required
                 />
+                <span class="error-text" id="error_subject"></span>
               </div>
 
               <div class="input-outline">
                 <textarea
                   class="form-control"
                   name="message"
+                  id="message"
                   rows="7"
                   placeholder="Message"
-                  required
                 ></textarea>
+                <span class="error-text" id="error_message"></span>
               </div>
 
               <button type="submit">Send Message</button>
@@ -296,16 +295,16 @@
               from our staff.
             </p>
             <div class="social-icons">
-              <img src="./images/001-facebook.png" alt="fb icon" />
+              <!-- <img src="./images/001-facebook.png" alt="fb icon" />
               <img src="./images/002-twitter.png" alt="twitter icon" />
-              <img src="./images/004-google-plus.png" alt="google-plus icon" />
+              <img src="./images/004-google-plus.png" alt="google-plus icon" /> -->
             </div>
           </div>
           <div class="footer-links">
             <h3>useful links</h3>
             <ul class="footer-nav">
               <li class="footer-item"><a href="#">Blogs</a></li>
-              <li class="footer-item"><a href="#">Rooms</a></li>
+              <li class="footer-item"><a href="#">Staff</a></li>
               <li class="footer-item"><a href="#">Gift Card</a></li>
               <li class="footer-item"><a href="#">Testimonials</a></li>
             </ul>
@@ -313,7 +312,7 @@
           <div class="privacy footer-links">
             <h3>Privacy</h3>
             <ul class="footer-nav">
-              <li class="footer-item"><a href="#">Carrer</a></li>
+              <li class="footer-item"><a href="#">Our Products</a></li>
               <li class="footer-item"><a href="#">About Us</a></li>
               <li class="footer-item"><a href="#">Contact Us</a></li>
               <li class="footer-item"><a href="#">Services</a></li>

@@ -853,14 +853,18 @@ section.cards{
 
 .input-outline{
     min-height:70px;
+    text-align: center;
 }
 
-input,
-textarea{
+.error-text{
+    color:red;
+    display: inline-block;
+}
+
+.form-control{
     border:2px solid blueviolet;
     padding:10px;
     border-radius:5px;
-    margin-bottom: 5px;
     width:100%;
 }
 
