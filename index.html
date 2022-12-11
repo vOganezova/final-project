@@ -19,44 +19,329 @@
     />
     <script src="./script.js" defer></script>
   </head>
-  <body>
-    <section class="header">
-      <header>
-        <div class="container">
-          <nav class="flex justify">
-            <div class="logo">
-              <span>Logo</span>
-            </div>
-            <ul class="nav-list flex justify">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pottery School</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-              <li class="nav-item">
-                <a class="nav-link" id="openAccount" href="#">My Account</a>
-              </li>
-            </ul>
-            <div class="hamburger-menu hide">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="close hide">
-              <i class="fa-solid fa-circle-xmark"></i>
-            </div>
-          </nav>
 
-          <div class="profile-wrapper">
-            <div id="user">
-              <h5>Signed in as:</h5>
-              <ul id="userInfo" class="flex column center"></ul>
+  <body>
+    <header>
+      <div class="nav-wrapper flex justify">
+        <div class="logo">
+          <span>Logo</span>
+        </div>
+        <nav id="navBar">
+          <ul class="nav-list flex justify">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#school">Pottery school</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="openAccount" href="#">My Account</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="modal-overlay">
+          <div class="modal-container">
+            <div class="profile-wrapper">
+              <div id="user">
+                <h5>Signed in as:</h5>
+                <ul id="userInfo" class="flex column center"></ul>
+              </div>
+            </div>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+        <div class="nav-toggler flex">
+          <div class="bar one"></div>
+          <div class="bar two"></div>
+          <div class="bar three"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="slider-wrapper">
+        <button class="arrow arrow-left" id="arrow-left">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="arrow arrow-right" id="arrow-right">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+        <div class="slider-content" id="slider-content"></div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="container">
+        <div class="cards-container flex">
+          <div class="card flex column center">
+            <div class="icon flex center">
+              <img
+                class="diamond flex center"
+                src="./images folder/021-diamond.png"
+                alt=""
+              />
+            </div>
+            <p>One-click Installation</p>
+            <span
+              >Etiam nec odio vestibulum est mattis effic iturut magna.</span
+            >
+          </div>
+          <div class="card flex column center">
+            <div class="icon flex center">
+              <img src="./images folder/021-piggy-bank.png" alt="" />
+            </div>
+            <p>Constant Free Updates</p>
+            <span
+              >Cras metus enim, luctus ut urna in, rutr um accum san mi.</span
+            >
+          </div>
+          <div class="card flex column center">
+            <div class="icon flex center">
+              <img src="./images folder/037-responsive.png" alt="" />
+            </div>
+            <p>Fully Responsive</p>
+            <span>Pharetra vehicula erat. Etiam nec odio vestibulum.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="title">
+          <h2>About Us</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-wrapper flex justify">
+          <div class="left">
+            <div class="about-img">
+              <img src="./assets/pot.jpg" alt="image of pottery" />
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="about-text">
+              <p class="about-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul class="about-desc">
+                <li>
+                  <i class="fa-solid fa-check"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Duis aute irure dolor in
+                  reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate trideta storacalaperda mastiro
+                  dolore eu fugiat nulla pariatur.
+                </li>
+              </ul>
+              <p class="about-footer">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident
+              </p>
+            </div>
+
+            <div class="about-video">
+              <img src="./assets/pot.jpg" alt="" />
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </section>
+
+    <section class="menu" id="shop">
+      <div class="container">
+        <div class="title">
+          <h2>our products</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="filter-btn" data-id="all">all</button>
+          <button type="button" class="filter-btn" data-id="breakfast">
+            breakfast
+          </button>
+          <button type="button" class="filter-btn" data-id="lunch">
+            lunch
+          </button>
+          <button type="button" class="filter-btn" data-id="shakes">
+            shakes
+          </button>
+        </div>
+        <div class="section-center"></div>
+      </div>
+    </section>
+
+    <section class="lessons" id="school">
+      <div class="container">
+        <div class="title">
+          <h2>Pottery School</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="school-wrapper flex justify">
+          <div class="row">
+            <div class="school-column">
+              <img src="./assets/pot.jpg" style="width: 100%" />
+              <img src="./assets/pot.jpg" style="width: 100%" />
+            </div>
+            <div class="school-column">
+              <img src="./assets/pot.jpg" style="width: 100%" />
+              <img src="./assets/pot.jpg" style="width: 100%" />
+            </div>
+          </div>
+          <div class="lessons-text">
+            <div class="lessons-content">
+              <h3>pottery school</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Facilis, repudiandae.
+              </p>
+              <button>view details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="title">
+          <h2>Contact Us</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="contact-wrapper flex">
+          <div class="left">
+            <div class="contact-img">
+              <img src="./assets/pot.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="right">
+            <form action="" method="post">
+              <div class="input-outline">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <span class="error-text" id="error_name"></span>
+              </div>
+
+              <div class="input-outline">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <span class="error-text" id="error_email"></span>
+              </div>
+
+              <div class="input-outline">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+
+              <div class="input-outline">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="7"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-container flex justify">
+          <div class="socials">
+            <div class="logo bigger-margin">
+              <span>Zetta Hotels</span>
+            </div>
+            <p class="grey bigger-margin">
+              Our hotel is an image of quality and profesionalism combined with
+              hard work and precision. You can expect only the best services
+              from our staff.
+            </p>
+            <div class="social-icons">
+              <img src="./images/001-facebook.png" alt="fb icon" />
+              <img src="./images/002-twitter.png" alt="twitter icon" />
+              <img src="./images/004-google-plus.png" alt="google-plus icon" />
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>useful links</h3>
+            <ul class="footer-nav">
+              <li class="footer-item"><a href="#">Blogs</a></li>
+              <li class="footer-item"><a href="#">Rooms</a></li>
+              <li class="footer-item"><a href="#">Gift Card</a></li>
+              <li class="footer-item"><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="privacy footer-links">
+            <h3>Privacy</h3>
+            <ul class="footer-nav">
+              <li class="footer-item"><a href="#">Carrer</a></li>
+              <li class="footer-item"><a href="#">About Us</a></li>
+              <li class="footer-item"><a href="#">Contact Us</a></li>
+              <li class="footer-item"><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="contact-info">
+            <h3>Contact Info</h3>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>example@yahoo.com</span>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-phone"></i> <span>+0 320 422 4254</span>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Main Str Chicago Ilinois</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">
+          Copyright ©2020 All rights reserved | This template is made with love
+          by
+          <span>Marian</span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
