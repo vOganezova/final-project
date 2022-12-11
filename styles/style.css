@@ -50,8 +50,17 @@ button{
     border: none;
     padding: 20px 25px;
     font-size: 14px;
+    background: transparent;
+    border: 2px solid #FF8767;
+    color:#8d3c26;
+    letter-spacing: 3px;
+    transition: all 0.5 linear;
 }
 
+button:hover{
+    background-color:#FF8767;
+    color:white;
+}
 img{
     max-width:100%;
 }
@@ -96,6 +105,8 @@ h3{
 header{
     width:100%;
     padding:20px 0;
+    background-color: #FFE5D1;
+    
 }
 
 .nav-wrapper{
@@ -112,13 +123,25 @@ header{
 }
 
 .logo img{
-    width:48px;
+    width:52px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logo span{
+    
+    color:#2F4858;
 }
 
 .nav-list{
     width:50%;
-    
+    z-index: 6;
     align-items: center;
+}
+
+.nav-item a{
+    color:#2F4858;
+    font-size: 14px;
 }
 
 #navBar{
@@ -385,22 +408,29 @@ header{
 .slider-text{
     min-width:30%;
     min-height:300px;
-    width:300px;
-    padding:30px;
+    width:400px;
+    padding:40px 70px;
     background-color: #fff;
    
 }
 
 .slider-title{
-    padding-top: 30px;
-    margin-bottom: 20px;
+    
+    margin-bottom: 10px;
     font-size: 65px;
     line-height: 65px;
+    color:#2F4858;
 }
 
 .slider-desc{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 24px;
+}
+
+.slider-text button{
+    background-color: #FF8767;
+    color:white;
+    letter-spacing: 3px;
 }
 
 
@@ -417,7 +447,8 @@ header{
 }
 
 .arrow:hover{
-    color:blueviolet;
+    color:white;
+    background-color: transparent;
 }
 
 .arrow-right {
@@ -436,7 +467,7 @@ header{
 }
 
 .dot {
-    color:blueviolet;
+    color:#2F4858;
     font-size: 24px;
     margin: 10px;
     cursor: pointer;
@@ -470,6 +501,22 @@ header{
     }
 
 
+}
+
+@media(max-width:768px){
+    .slider-text{
+        padding:30px;
+        max-width:100%;
+    }
+
+    .slider-title{
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .slider-desc{
+        font-size:18px;
+    }
 }
 
 
@@ -507,12 +554,15 @@ header{
 
 section.cards{
     text-align: center;
-    padding-top: 0;
+    padding: 0;
+    background-color:#FFE5D1;
 }
 
 .cards{
     padding-top:0;
 }
+
+
 
 .cards-container{
     justify-content: space-around;
@@ -523,7 +573,6 @@ section.cards{
 
 .card{
     max-width:364px;
-    background-color: #EDF7FF;
     padding:20px 35px;
     width:300px;
     text-align: center;
@@ -608,7 +657,7 @@ section.cards{
     background: transparent;
     font-size: 1rem;
     text-transform: capitalize;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     letter-spacing: 1px;
     padding: 0.375rem 0.75rem;
     cursor: pointer;
@@ -634,6 +683,15 @@ section.cards{
   .menu-item:hover{
     opacity: .8;
     transform: scale(1.1);
+  }
+
+  .product-div{
+    background-color: #fcf5f3;
+    border:1px solid #FFECE7;
+    box-shadow: 10px 10px 7px -6px rgba(14,13,13,0.4);
+-webkit-box-shadow: 10px 10px 7px -6px rgba(14,13,13,0.4);
+-moz-box-shadow: 10px 10px 7px -6px rgba(14,13,13,0.4);
+    padding:30px;
   }
 
 
@@ -719,6 +777,7 @@ section.cards{
         background-position: center;
         display:grid;
         place-items: center;
+        color:#2F4858;
     }
 
     .lessons-content{
@@ -729,6 +788,11 @@ section.cards{
         display:grid;
         place-items: center;
         padding:20px;
+    }
+
+    .lessons-content p{
+        line-height: 30px;
+        max-width:200px;
     }
 
     .lessons h2{
@@ -766,6 +830,10 @@ section.cards{
 
 /*about us*/
 
+section#about{
+    padding-top: 100px;
+}
+
 .about-wrapper{
     padding-top:50px;
 }
@@ -776,6 +844,8 @@ section.cards{
 
 .about-wrapper .right{
     width:45%;
+    background-color: #FFECE7;
+    padding:30px;
 }
 .about-img {
     min-height: 500px;
@@ -860,6 +930,10 @@ section.cards{
 
 
   /*contact*/
+
+section#contact{
+    background-color:#FFE5D1;
+}
 .contact-wrapper{
     padding-top:50px;
     justify-content: space-around;
@@ -889,7 +963,7 @@ section.cards{
 }
 
 .form-control{
-    border:2px solid blueviolet;
+    border:1px solid #2F4858;
     padding:10px;
     border-radius:5px;
     width:100%;
@@ -897,8 +971,8 @@ section.cards{
 
 form button{
     font-family: inherit;
-    border:2px solid blueviolet;
-    padding:10px 20px;
+    border:1px solid #2F4858;
+    padding:10px 40px;
     background-color: transparent;
     width:150px;
     margin:0 auto;
@@ -909,7 +983,7 @@ form button{
 
 form button:hover{
     color:white;
-    background-color: blueviolet;
+    background-color: #2F4858;
 }
 
 
@@ -948,7 +1022,15 @@ form button:hover{
 footer{
     padding-top:90px;
     padding-bottom:40px;
-    background-color: #121212;
+    background-color:#2F4858;
+}
+
+footer .logo-title{
+    color:#FFE5D1;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .social-icons img:first-child,
@@ -958,16 +1040,17 @@ footer{
 
 .socials{
     margin-bottom:54px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials .logo{
+    width:100%;
 }
 
 .socials .logo span{
     font-size: 24px;
 }
-
-.socials .grey{
-    max-width:260px;
-}
-
 
 
 .footer-item{
@@ -975,7 +1058,7 @@ footer{
 }
 
 .footer-item a{
-    color:#5863F8;
+    color:#FF8767;
     font-size:14px;
     font-weight:500;
 }
@@ -991,7 +1074,7 @@ footer{
 }
 
 .contact-info i{
-    color:#5863F8;
+    color:#FF8767;
     margin-right:14px;
 }
 
@@ -1003,12 +1086,14 @@ footer{
 }
 
 .copyright span{
-    color:#5863F8;
+    color:#FF8767;
 }
 
 @media (max-width:465px){
     .socials{
         margin-right:20px;
+        width:100%;
+        margin-right: 0;
     }
 
     .contact-info{

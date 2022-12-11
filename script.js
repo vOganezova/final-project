@@ -82,7 +82,7 @@ let data = [
     {   
         index:0,
         text:'Holiday Surprises',
-        desc:'stay tuned for holiday news...',
+        desc:'stay tuned...',
         img: "./assets/covers/1.jpg"
     },
     {
@@ -314,8 +314,10 @@ function diplayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
 
     return `<article class="menu-item">
+           <div class="product-div">
           <img src=${item.img} class="photo" />
           <h4 class="price">${item.price} GEL</h4>
+          </div>
          
         </article>`;
   });
