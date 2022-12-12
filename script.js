@@ -87,7 +87,7 @@ let data = [
     },
     {
         index:1,
-        text:'Perflect time',
+        text:'Perfect time',
         desc:'to reflect and create',
         img: "./assets/covers/2.jpg"
     },
