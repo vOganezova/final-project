@@ -121,7 +121,10 @@ header{
     width:100%;
     padding:20px 0;
     background-color: #FFE5D1;
-    
+    position:fixed ;
+    top:0;
+    left:0;
+    z-index: 10;
 }
 
 .nav-wrapper{
@@ -172,6 +175,7 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    white-space:nowrap;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -219,7 +223,7 @@ header{
 
 
 
-@media (max-width:768px) {
+@media (max-width:960px) {
     .nav-toggler{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -447,6 +451,7 @@ header{
 
 .hero{
     padding-top: 0;
+    margin-top: 90px;
 }
 
 .slider-wrapper {
@@ -578,24 +583,39 @@ header{
 @media(max-width:768px){
     .slider-text{
         padding:30px;
-        max-width:100%;
+        width:300px;
+        margin:0 auto;
+        text-align: center;
     }
+
+    .slider-title{
+        font-size:38px;
+        line-height: 43px;
+        
+    }
+
+   
 
     .slider-desc{
         font-size:18px;
+        margin-bottom: 30px;
     }
 }
 
 
 
-@media(max-width:320px){
+@media(max-width:490px){
      .bg{
         padding: 10px;
      }
 
      .slider-text{
         background-color: rgba(225, 225, 225, 0.7);
-        text-align: center;
+        max-width: 100%;
+     }
+
+     .slider-title{
+        margin: 20px;
      }
 
       .arrow{
@@ -611,6 +631,12 @@ header{
      }
 
      
+}
+
+@media(max-width:390px){
+    .hero{
+        margin-top: 80px;
+    }
 }
 
 

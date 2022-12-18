@@ -1,3 +1,6 @@
+"use strict";
+
+
 //hamburger menu
 const nav = document.getElementById('navBar');
 const toggler = document.querySelector('.nav-toggler');
